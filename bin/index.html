@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="cache-control" content="no-cache, no-store">
+	<title>Seasonal Change</title>
+	<meta name="description" content="By Ethan Kennerly and Diana Salles.  Betabreakers Game Jam, November 15, 2014."/>
+	
+	<script src="../js/swfobject.js"></script>
+	<script src="flashvars.js"></script>
+	<script>
+		var params = {
+			menu: "false",
+			scale: "showAll",
+			allowFullscreen: "true",
+			allowScriptAccess: "always",
+			bgcolor: "",
+			wmode: "direct" // can cause issues with FP settings & webcam
+		};
+		var attributes = {
+			id:"change"
+		};
+		swfobject.embedSWF(
+			"change.swf", 
+			"altContent", "800", "450", "10.0.0", 
+			"../js/expressInstall.swf", 
+			flashvars, params, attributes);
+	</script>
+	<style>
+		html, pre{font-family:"Arial", cursive, sans-serif;}
+		body { margin:0; background:#C1C1AD}
+	</style>
+</head>
+<center>
+<body bgcolor=#C1C1AD>
+<table>
+<tr><td width=33%></td><td width=33%>
+<br>
+<br>
+	<div id="altContent">
+		<h1>change</h1>
+		<p><a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a></p>
+	</div>
+</td><td width=33% style="padding-left:48px">
+<pre><font color=#eeeeee size=3>
+<p>
+<p>
+<p>
+<p>
+Seasonal Change
+<p>
+Each day one thing changes.
+Click the change.
+<p>
+By Ethan Kennerly and Diana Salles
+November 15, 2014
+Betabreakers Game Jam at Vungle
+Inspired by "Change Blindness" 
+at the Exploratorium</td><td>
+</font></pre>
+</td></tr>
+<tr><td>
+<pre><font color=#eeeeee size=3>
+</pre>
+</td></tr>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,43 @@
+POSTMORTEM
+	What went right:
+		+ Beautiful illustration.
+		+ Transition of season.
+		+ Can be very challenging.
+	What went wrong:
+		- Interpret button hit area of irregular bitmap.
+		- Parse irregular shaped bitmap as visible aspect.
+		- Polishing images before playtesting.
+
+TODO
+	Speed up night time.
+	Make subtle changes more obvious and incongruous.
+	after a while for first 3 days,  prompt to click.
+	correct.  music.  pachebel canon.  george winston, thanksgiving.
+	Save high score.  Save levels.
+
+LOG
+	19 start
+	01 play
+
+NAME BANK
+	Spot the Change
+	Spot the Difference
+	Changing Seasons
+	Seasonal Change
+	A New Day
+	What's New Today?
+	Change
+	Wink
+	Solstice
+
+JOURNAL
+
+
+Fri 11/14/2014 
+20:05
+
+Exploratorium exhibit change blindness.
+Rip Van Winkle
+Seasons
+
+
