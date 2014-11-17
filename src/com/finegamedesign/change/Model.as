@@ -7,12 +7,12 @@ package com.finegamedesign.change
         internal function get interStimulusInterval():int
         {
             var thickness:Number = thicknesses[targets[0]];
-            var base:Number = 200;
+            var base:Number = 400;
+            var max:Number = 1000;
             var thick:Number = thickness / base;
-            return /*thick * */ Math.max(0,
-                referee.percent
-                // 200 
-                    * trial);
+            return thick * Math.max(0,
+                max * Math.min((referee.percent - 80) * 0.05,
+                    2 * trial / trialMax));
         }
 
         internal var target:int;
@@ -23,7 +23,6 @@ package com.finegamedesign.change
         internal var listening:Boolean = false;
         internal var referee:Referee = new Referee();
         internal var review:Boolean = false;
-        internal var reviewing:Boolean = false;
         internal var round:int = -1;
         internal var thicknesses:Array;
         internal var thinnest:int;
@@ -53,9 +52,9 @@ package com.finegamedesign.change
             trace("Model: " + targets);
             trialMax = targets.length;
 
+            thicknesses = getThickness(positions);
             /**
              * TODO thin first.  or balance thicknesses.
-            thicknesses = getThickness(positions);
             thinnest = thicknesses.sort(Array.NUMERIC | Array.DESCENDING);
             thinnest = thicknesses.indexOf(thinnest);
             var index:int = targets.indexOf(thinnest);

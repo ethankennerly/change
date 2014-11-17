@@ -148,8 +148,6 @@ package com.finegamedesign.change
             model.trialEnd(correct);
             if (correct) {
                 view.trialEnd();
-                if (model.reviewing) {
-                }
                 if (model.enabled) {
                     view.win();
                 }
@@ -194,6 +192,9 @@ package com.finegamedesign.change
             }
             if (model.enabled && model.complete) {
                 view.screen.play();
+            }
+            if (model.review) {
+                restart();
             }
         }
     }

@@ -260,8 +260,8 @@ package com.finegamedesign.change
 
         internal function restart():void
         {
+            hideScreen();
             clear();
-            remove(screen);
             backgroundClip.stop();
             screen.stop();
             remove(backgroundClip);
